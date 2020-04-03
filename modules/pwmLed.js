@@ -1,6 +1,6 @@
 class PwmLed {
   static startPWM(time) {
-  	  var sec = time * 60 || 60;
+  	var sec = time * 60 || 60;
 	  var light = 0;
 	  var id = setInterval(function() {
 	    if(light >= 1) clearInterval(id);
@@ -9,4 +9,4 @@ class PwmLed {
 	  }, (sec*50));
   }
 }
-exports = PwmLed
+exports = PwmLed;

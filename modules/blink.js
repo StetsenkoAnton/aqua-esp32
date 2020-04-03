@@ -4,7 +4,7 @@ class Blink {
   static startBlink() {
   	var on = false;
 	setInterval(function() {
-		digitalWrite(D2,on = !on);
+		digitalWrite(D2, on = !on);
 	}, 500);
   }
 }
